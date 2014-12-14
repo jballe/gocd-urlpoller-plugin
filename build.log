@@ -1,0 +1,273 @@
+Buildfile: /home/vagrant/url.poller-plugin/build.xml
+
+clean:
+   [delete] Deleting directory /home/vagrant/url.poller-plugin/target
+   [delete] Deleting directory /home/vagrant/url.poller-plugin/reports
+
+prepare:
+    [mkdir] Created dir: /home/vagrant/url.poller-plugin/target
+    [mkdir] Created dir: /home/vagrant/url.poller-plugin/target/src
+    [mkdir] Created dir: /home/vagrant/url.poller-plugin/target/test
+    [mkdir] Created dir: /home/vagrant/url.poller-plugin/reports
+
+resolve:
+[ivy:retrieve] :: Ivy 2.1.0-rc2 - 20090704004254 :: http://ant.apache.org/ivy/ ::
+[ivy:retrieve] :: loading settings :: url = jar:file:/home/vagrant/.ant/lib/ivy.jar!/org/apache/ivy/core/settings/ivysettings.xml
+[ivy:retrieve] :: resolving dependencies :: com.thoughtworks.go#plugin-util;working@precise64
+[ivy:retrieve] 	confs: [default]
+[ivy:retrieve] 	found org.apache.commons#commons-lang3;3.1 in public
+[ivy:retrieve] 	found commons-logging#commons-logging;1.1.3 in public
+[ivy:retrieve] 	found log4j#log4j;1.2.17 in public
+[ivy:retrieve] 	found logkit#logkit;1.0.1 in public
+[ivy:retrieve] 	found avalon-framework#avalon-framework;4.1.5 in public
+[ivy:retrieve] 	found javax.servlet#servlet-api;2.3 in public
+[ivy:retrieve] 	found commons-io#commons-io;2.4 in public
+[ivy:retrieve] 	found org.apache.httpcomponents#httpclient;4.2.5 in public
+[ivy:retrieve] 	found org.apache.httpcomponents#httpcore;4.2.4 in public
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] 	found com.thoughtworks#go-plugin-api;current in local
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] downloading http://www.thoughtworks.com/products/docs/go/current/help/resources/go-plugin-api-current.jar ...
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:retrieve] :: resolution report :: resolve 162737ms :: artifacts dl 120695ms
+[ivy:retrieve] 	:: evicted modules:
+[ivy:retrieve] 	commons-logging#commons-logging;1.1.1 by [commons-logging#commons-logging;1.1.3] in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   14  |   0   |   0   |   1   ||   20  |   0   |
+	---------------------------------------------------------------------
+[ivy:retrieve] 
+[ivy:retrieve] :: problems summary ::
+[ivy:retrieve] :::: WARNINGS
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar
+[ivy:retrieve] 		module not found: commons-codec#commons-codec;1.6
+[ivy:retrieve] 	==== local: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/local/commons-codec/commons-codec/1.6/ivys/ivy.xml
+[ivy:retrieve] 	  -- artifact commons-codec#commons-codec;1.6!commons-codec.jar:
+[ivy:retrieve] 	  /home/vagrant/.ivy2/local/commons-codec/commons-codec/1.6/jars/commons-codec.jar
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/commons-codec/commons-codec/1.6/ivys/ivy.xml
+[ivy:retrieve] 	  -- artifact commons-codec#commons-codec;1.6!commons-codec.jar:
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/commons-codec/commons-codec/1.6/jars/commons-codec.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom
+[ivy:retrieve] 	  -- artifact commons-codec#commons-codec;1.6!commons-codec.jar:
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/junit/junit/4.11/junit-4.11.pom
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/junit/junit/4.11/junit-4.11.jar
+[ivy:retrieve] 		module not found: junit#junit;4.11
+[ivy:retrieve] 	==== local: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/local/junit/junit/4.11/ivys/ivy.xml
+[ivy:retrieve] 	  -- artifact junit#junit;4.11!junit.jar:
+[ivy:retrieve] 	  /home/vagrant/.ivy2/local/junit/junit/4.11/jars/junit.jar
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/junit/junit/4.11/ivys/ivy.xml
+[ivy:retrieve] 	  -- artifact junit#junit;4.11!junit.jar:
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/junit/junit/4.11/jars/junit.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/junit/junit/4.11/junit-4.11.pom
+[ivy:retrieve] 	  -- artifact junit#junit;4.11!junit.jar:
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/junit/junit/4.11/junit-4.11.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.pom
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar
+[ivy:retrieve] 		module not found: org.mockito#mockito-all;1.9.5
+[ivy:retrieve] 	==== local: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/local/org.mockito/mockito-all/1.9.5/ivys/ivy.xml
+[ivy:retrieve] 	  -- artifact org.mockito#mockito-all;1.9.5!mockito-all.jar:
+[ivy:retrieve] 	  /home/vagrant/.ivy2/local/org.mockito/mockito-all/1.9.5/jars/mockito-all.jar
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/org.mockito/mockito-all/1.9.5/ivys/ivy.xml
+[ivy:retrieve] 	  -- artifact org.mockito#mockito-all;1.9.5!mockito-all.jar:
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/org.mockito/mockito-all/1.9.5/jars/mockito-all.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.pom
+[ivy:retrieve] 	  -- artifact org.mockito#mockito-all;1.9.5!mockito-all.jar:
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar
+[ivy:retrieve] 	Host www.thoughtworks.com not found. url=http://www.thoughtworks.com/products/docs/go/current/help/resources/go-plugin-api-current.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/com/thoughtworks/go-plugin-api/current/go-plugin-api-current.pom
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/com/thoughtworks/go-plugin-api/current/go-plugin-api-current.jar
+[ivy:retrieve] 	Host www.thoughtworks.com not found. url=http://www.thoughtworks.com/products/docs/go/current/help/resources/go-plugin-api-current.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1-sources.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1-javadoc.jar
+[ivy:retrieve] 		[FAILED     ] org.apache.commons#commons-lang3;3.1!commons-lang3.jar:  (0ms)
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/org.apache.commons/commons-lang3/3.1/jars/commons-lang3.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar
+[ivy:retrieve] 		[FAILED     ] org.apache.commons#commons-lang3;3.1!commons-lang3.jar(source):  (0ms)
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/org.apache.commons/commons-lang3/3.1/sources/commons-lang3.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1-sources.jar
+[ivy:retrieve] 		[FAILED     ] org.apache.commons#commons-lang3;3.1!commons-lang3.jar(javadoc):  (0ms)
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/org.apache.commons/commons-lang3/3.1/javadocs/commons-lang3.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1-javadoc.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3-sources.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3-javadoc.jar
+[ivy:retrieve] 		[FAILED     ] commons-logging#commons-logging;1.1.3!commons-logging.jar(source):  (0ms)
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/commons-logging/commons-logging/1.1.3/sources/commons-logging.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3-sources.jar
+[ivy:retrieve] 		[FAILED     ] commons-logging#commons-logging;1.1.3!commons-logging.jar:  (0ms)
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/commons-logging/commons-logging/1.1.3/jars/commons-logging.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar
+[ivy:retrieve] 		[FAILED     ] commons-logging#commons-logging;1.1.3!commons-logging.jar(javadoc):  (0ms)
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/commons-logging/commons-logging/1.1.3/javadocs/commons-logging.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3-javadoc.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4-sources.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4-javadoc.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar
+[ivy:retrieve] 		[FAILED     ] commons-io#commons-io;2.4!commons-io.jar(source):  (0ms)
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/commons-io/commons-io/2.4/sources/commons-io.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4-sources.jar
+[ivy:retrieve] 		[FAILED     ] commons-io#commons-io;2.4!commons-io.jar(javadoc):  (0ms)
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/commons-io/commons-io/2.4/javadocs/commons-io.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4-javadoc.jar
+[ivy:retrieve] 		[FAILED     ] commons-io#commons-io;2.4!commons-io.jar:  (0ms)
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/commons-io/commons-io/2.4/jars/commons-io.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5-javadoc.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5-sources.jar
+[ivy:retrieve] 		[FAILED     ] org.apache.httpcomponents#httpclient;4.2.5!httpclient.jar:  (0ms)
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/org.apache.httpcomponents/httpclient/4.2.5/jars/httpclient.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5.jar
+[ivy:retrieve] 		[FAILED     ] org.apache.httpcomponents#httpclient;4.2.5!httpclient.jar(javadoc):  (0ms)
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/org.apache.httpcomponents/httpclient/4.2.5/javadocs/httpclient.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5-javadoc.jar
+[ivy:retrieve] 		[FAILED     ] org.apache.httpcomponents#httpclient;4.2.5!httpclient.jar(source):  (0ms)
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/org.apache.httpcomponents/httpclient/4.2.5/sources/httpclient.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5-sources.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.4/httpcore-4.2.4-javadoc.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.4/httpcore-4.2.4-sources.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.4/httpcore-4.2.4.jar
+[ivy:retrieve] 		[FAILED     ] org.apache.httpcomponents#httpcore;4.2.4!httpcore.jar(javadoc):  (0ms)
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/org.apache.httpcomponents/httpcore/4.2.4/javadocs/httpcore.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.4/httpcore-4.2.4-javadoc.jar
+[ivy:retrieve] 		[FAILED     ] org.apache.httpcomponents#httpcore;4.2.4!httpcore.jar(source):  (0ms)
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/org.apache.httpcomponents/httpcore/4.2.4/sources/httpcore.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.4/httpcore-4.2.4-sources.jar
+[ivy:retrieve] 		[FAILED     ] org.apache.httpcomponents#httpcore;4.2.4!httpcore.jar:  (0ms)
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/org.apache.httpcomponents/httpcore/4.2.4/jars/httpcore.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.4/httpcore-4.2.4.jar
+[ivy:retrieve] 	Host www.thoughtworks.com not found. url=http://www.thoughtworks.com/products/docs/go/current/help/resources/go-plugin-api-current.jar
+[ivy:retrieve] 		[FAILED     ] com.thoughtworks#go-plugin-api;current!go-plugin-api.jar: www.thoughtworks.com (40046ms)
+[ivy:retrieve] 		[FAILED     ] com.thoughtworks#go-plugin-api;current!go-plugin-api.jar: www.thoughtworks.com (40046ms)
+[ivy:retrieve] 	==== local: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/local/com.thoughtworks/go-plugin-api/current/jars/go-plugin-api.jar
+[ivy:retrieve] 	  http://www.thoughtworks.com/products/docs/go/current/help/resources/go-plugin-api-current.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar
+[ivy:retrieve] 		[FAILED     ] log4j#log4j;1.2.17!log4j.jar(bundle):  (0ms)
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/log4j/log4j/1.2.17/bundles/log4j.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/logkit/logkit/1.0.1/logkit-1.0.1.jar
+[ivy:retrieve] 		[FAILED     ] logkit#logkit;1.0.1!logkit.jar:  (0ms)
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/logkit/logkit/1.0.1/jars/logkit.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/logkit/logkit/1.0.1/logkit-1.0.1.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/avalon-framework/avalon-framework/4.1.5/avalon-framework-4.1.5.jar
+[ivy:retrieve] 		[FAILED     ] avalon-framework#avalon-framework;4.1.5!avalon-framework.jar:  (0ms)
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/avalon-framework/avalon-framework/4.1.5/jars/avalon-framework.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/avalon-framework/avalon-framework/4.1.5/avalon-framework-4.1.5.jar
+[ivy:retrieve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/javax/servlet/servlet-api/2.3/servlet-api-2.3.jar
+[ivy:retrieve] 		[FAILED     ] javax.servlet#servlet-api;2.3!servlet-api.jar:  (0ms)
+[ivy:retrieve] 	==== shared: tried
+[ivy:retrieve] 	  /home/vagrant/.ivy2/shared/javax.servlet/servlet-api/2.3/jars/servlet-api.jar
+[ivy:retrieve] 	==== public: tried
+[ivy:retrieve] 	  http://repo1.maven.org/maven2/javax/servlet/servlet-api/2.3/servlet-api-2.3.jar
+[ivy:retrieve] 		::::::::::::::::::::::::::::::::::::::::::::::
+[ivy:retrieve] 		::          UNRESOLVED DEPENDENCIES         ::
+[ivy:retrieve] 		::::::::::::::::::::::::::::::::::::::::::::::
+[ivy:retrieve] 		:: commons-codec#commons-codec;1.6: not found
+[ivy:retrieve] 		:: junit#junit;4.11: not found
+[ivy:retrieve] 		:: org.mockito#mockito-all;1.9.5: not found
+[ivy:retrieve] 		::::::::::::::::::::::::::::::::::::::::::::::
+[ivy:retrieve] 		::::::::::::::::::::::::::::::::::::::::::::::
+[ivy:retrieve] 		::              FAILED DOWNLOADS            ::
+[ivy:retrieve] 		:: ^ see resolution messages for details  ^ ::
+[ivy:retrieve] 		::::::::::::::::::::::::::::::::::::::::::::::
+[ivy:retrieve] 		:: org.apache.commons#commons-lang3;3.1!commons-lang3.jar
+[ivy:retrieve] 		:: org.apache.commons#commons-lang3;3.1!commons-lang3.jar(source)
+[ivy:retrieve] 		:: org.apache.commons#commons-lang3;3.1!commons-lang3.jar(javadoc)
+[ivy:retrieve] 		:: commons-logging#commons-logging;1.1.3!commons-logging.jar(source)
+[ivy:retrieve] 		:: commons-logging#commons-logging;1.1.3!commons-logging.jar
+[ivy:retrieve] 		:: commons-logging#commons-logging;1.1.3!commons-logging.jar(javadoc)
+[ivy:retrieve] 		:: log4j#log4j;1.2.17!log4j.jar(bundle)
+[ivy:retrieve] 		:: logkit#logkit;1.0.1!logkit.jar
+[ivy:retrieve] 		:: avalon-framework#avalon-framework;4.1.5!avalon-framework.jar
+[ivy:retrieve] 		:: javax.servlet#servlet-api;2.3!servlet-api.jar
+[ivy:retrieve] 		:: commons-io#commons-io;2.4!commons-io.jar(source)
+[ivy:retrieve] 		:: commons-io#commons-io;2.4!commons-io.jar(javadoc)
+[ivy:retrieve] 		:: commons-io#commons-io;2.4!commons-io.jar
+[ivy:retrieve] 		:: org.apache.httpcomponents#httpclient;4.2.5!httpclient.jar
+[ivy:retrieve] 		:: org.apache.httpcomponents#httpclient;4.2.5!httpclient.jar(javadoc)
+[ivy:retrieve] 		:: org.apache.httpcomponents#httpclient;4.2.5!httpclient.jar(source)
+[ivy:retrieve] 		:: org.apache.httpcomponents#httpcore;4.2.4!httpcore.jar(javadoc)
+[ivy:retrieve] 		:: org.apache.httpcomponents#httpcore;4.2.4!httpcore.jar(source)
+[ivy:retrieve] 		:: org.apache.httpcomponents#httpcore;4.2.4!httpcore.jar
+[ivy:retrieve] 		:: com.thoughtworks#go-plugin-api;current!go-plugin-api.jar
+[ivy:retrieve] 		::::::::::::::::::::::::::::::::::::::::::::::
+[ivy:retrieve] 
+[ivy:retrieve] :: USE VERBOSE OR DEBUG MESSAGE LEVEL FOR MORE DETAILS

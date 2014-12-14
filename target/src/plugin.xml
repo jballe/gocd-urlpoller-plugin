@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<go-plugin id="url" version="1">
+    <about>
+        <name>Url Poller plugin</name>
+        <version>0.1.0</version>
+        <target-go-version>14.1</target-go-version>
+        <description>Plugin that polls an url</description>
+        <vendor>
+            <name>Jesper Balle</name>
+            <url>https://github.com/jballe/go-url-poller-plugin/</url>
+        </vendor>
+    </about>
+</go-plugin>
+
